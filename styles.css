@@ -8,9 +8,9 @@ body {
 }
 
 #calculator {
-    width: 250px;
+    width: 300px;
     background: #222;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
@@ -18,8 +18,8 @@ body {
 
 #display {
     width: 100%;
-    height: 50px;
-    font-size: 20px;
+    height: 40px;
+    font-size: 40px;
     text-align: right;
     padding: 10px;
     margin-bottom: 15px;
@@ -40,6 +40,13 @@ button {
     background: #444;
     color: white;
     transition: 0.3s;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 5px; /* Space between buttons */
+    justify-content: center;
 }
 
 button:hover {
